@@ -1,0 +1,16 @@
+Welcome,
+
+To clean type "mvn clean"
+To install type "mvn install"
+To run the tests type "mvn test"
+To run the app type  " mvn exec:java -Dexec.mainClass="App" "(I wasn't able to finish the maven configuration)
+
+The application provides 4 endpoints and runs in port 4567
+
+- To create an account make a POST to "http://localhost:4567/account"
+- To get the balance for an account make a GET to "http://localhost:4567/account/:accountId/balance"
+- To add a deposit make a PUT to "http://localhost:4567/account/:accountId/transactions/deposit/:depositValue"
+- To add a withdraw make a PUT to "http://localhost:4567/account/:accountId/transactions/withdraw/:withdrawValue"
+
+When the project is run it's started with two accounts with zero transactions each, their respective id's are 1 and 2.
+If you need more accounts just create one with the endpoint provided
